@@ -89,6 +89,10 @@ func poster() {
 func initConfig() {
 
 	RootDir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	RootDir = "/Users/yuewushuang/develop/mm-wiki/"
+	log.Println(RootDir)
+	//log.Println("conf1 = ", os.Args[0])
+	//log.Println("conf = ", os.Args[1])
 	if err != nil {
 		log.Println("init config error: " + err.Error())
 		os.Exit(1)
